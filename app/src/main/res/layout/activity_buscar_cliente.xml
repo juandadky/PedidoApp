@@ -1,167 +1,179 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:weightSum="10"
     tools:context=".View.BuscarClienteActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/background_orange_0angle"
-        android:orientation="horizontal"
-        android:padding="10dp">
-
-        <ImageButton
-            android:id="@+id/btn_back"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.1"
-            android:background="@android:color/transparent"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_arrow_back_white_24dp"/>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.8"
-            android:text="@string/dashboard_buscar_cliente"
-            android:textSize="22sp"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textColor="@color/colorBlanco"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:padding="10dp">
-
-        <RadioGroup
-            android:id="@+id/rbd_opciones_busqueda"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/rdb_nombre_cliente"
-                android:layout_width="0dp"
-                android:layout_weight="0.5"
-                android:layout_height="wrap_content"
-                android:text="Nombres"
-                android:textColor="#6c7075"
-                android:buttonTint="@color/startColor"
-                android:textSize="20sp"
-                android:layout_marginLeft="10dp"/>
-
-            <RadioButton
-                android:id="@+id/rdb_dni"
-                android:layout_width="0dp"
-                android:layout_weight="0.5"
-                android:layout_height="wrap_content"
-                android:text="DNI/RUC"
-                android:textColor="#6c7075"
-                android:buttonTint="@color/startColor"
-                android:textSize="20sp"
-                android:layout_marginLeft="10dp"/>
-
-        </RadioGroup>
-
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.7">
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.05"/>
-
-        <CheckBox
-            android:id="@+id/cbx_buscar_todo_cliente"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.95"
-            android:text="Mostrar todos los clientes"
-            android:buttonTint="@color/startColor"
-            android:textColor="#6c7075"
-            android:textSize="18sp" />
-
-    </LinearLayout>
-
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.8"
-        android:layout_margin="8dp"
-        app:cardCornerRadius="5dp"
-        android:elevation="4dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="50dp"
+            android:background="@drawable/background_orange_0angle"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
-            <EditText
-                android:id="@+id/txt_dato_busqueda"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="0.85"
-                android:background="@drawable/background_edit_text"
-                android:hint="Ingresar datos de búsqueda"
-                android:textSize="18sp"/>
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="#40000000"/>
             <ImageButton
-                android:id="@+id/btn_buscar_cliente"
+                android:id="@+id/btn_back"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.15"
-                android:src="@drawable/buscar_cliente"
+                android:layout_weight="0.1"
                 android:background="@android:color/transparent"
-                android:padding="8dp"
-                android:scaleType="fitCenter"/>
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_arrow_back_white_24dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:text="@string/dashboard_buscar_cliente"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlanco"/>
 
         </LinearLayout>
 
-    </android.support.v7.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:padding="10dp">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_buscar_cliente"
-        android:visibility="gone"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="6.5"
-        tools:listitem="@layout/layout_buscar_cliente"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"/>
+            <RadioGroup
+                android:id="@+id/rbd_opciones_busqueda"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/txt_sin_datos"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="6.5"
-        android:gravity="center"
-        android:text="Realiza la búsqueda de un cliente seleccionando el tipo de búsqueda"
-        android:textStyle="bold"
-        android:textColor="@color/colorTextHint"
-        android:textSize="24sp"
-        android:padding="24dp"/>
+                <RadioButton
+                    android:id="@+id/rdb_nombre_cliente"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text="Nombres"
+                    android:textColor="#6c7075"
+                    android:buttonTint="@color/startColor"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"/>
+
+                <RadioButton
+                    android:id="@+id/rdb_dni"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:text="DNI/RUC"
+                    android:textColor="#6c7075"
+                    android:buttonTint="@color/startColor"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"/>
+
+            </RadioGroup>
 
 
-</LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.05"/>
+
+            <CheckBox
+                android:id="@+id/cbx_buscar_todo_cliente"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.95"
+                android:text="Mostrar todos los clientes"
+                android:buttonTint="@color/startColor"
+                android:textColor="#6c7075"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="5dp"
+            android:elevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/txt_dato_busqueda"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.85"
+                    android:background="@drawable/background_edit_text"
+                    android:hint="Ingresar datos de búsqueda"
+                    android:textSize="18sp"/>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#40000000"/>
+                <ImageButton
+                    android:id="@+id/btn_buscar_cliente"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:src="@drawable/buscar_cliente"
+                    android:background="@android:color/transparent"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_buscar_cliente"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/layout_buscar_cliente"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+
+        <TextView
+            android:id="@+id/txt_sin_datos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Realiza la búsqueda de un cliente seleccionando el tipo de búsqueda"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextHint"
+            android:textSize="24sp"
+            android:padding="24dp"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_agregar_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add_white_24dp"
+        app:elevation="8dp"
+        app:fabSize="auto"/>
+
+</android.support.design.widget.CoordinatorLayout>
+

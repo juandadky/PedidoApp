@@ -17,34 +17,35 @@
         android:gravity="center_vertical">
 
         <TextView
-            android:id="@+id/txt_codigo_producto"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="02345"
-            android:textColor="#717171"
-            android:textAlignment="center"
-            android:textSize="20sp"/>
-
-        <TextView
             android:id="@+id/txt_nombre_producto"
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="7"
-            android:text="Saco de arroz El Faraón 7kg"
             android:textColor="#717171"
-            android:textSize="20sp"
+            android:text="Pack Pago Producto aasjhdksahdasjkdad"
+            android:textSize="16sp"
             android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/txt_stock_producto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/startColor"
+            android:text="Stock: 1000"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
 
         <TextView
             android:id="@+id/txt_precio_producto"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:text="S/.60.00"
             android:textColor="#717171"
             android:textAlignment="center"
-            android:textSize="20sp"
+            android:text="S/.260.00"
+            android:textSize="16sp"
             android:layout_marginLeft="5dp"/>
 
     </LinearLayout>

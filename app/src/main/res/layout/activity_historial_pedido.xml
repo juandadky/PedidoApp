@@ -10,8 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="50dp"
         android:background="@drawable/background_orange_0angle"
         android:orientation="horizontal"
         android:padding="10dp">
@@ -37,6 +36,83 @@
 
     </LinearLayout>
 
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp">
+
+        <RadioGroup
+            android:id="@+id/rbd_opciones_busqueda_historial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdb_por_facturar"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Por Facturar"
+                android:textColor="#6c7075"
+                android:buttonTint="@color/startColor"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/rdb_facturado"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Facturados"
+                android:textColor="#6c7075"
+                android:buttonTint="@color/startColor"
+                android:textSize="16sp"/>
+
+            <RadioButton
+                android:id="@+id/rdb_anulado"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Anulados"
+                android:textColor="#6c7075"
+                android:buttonTint="@color/startColor"
+                android:textSize="16sp"
+                android:layout_marginLeft="10dp"/>
+
+        </RadioGroup>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/root_datos"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txt_numero_pedidos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="Nº Pedidos: 567"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txt_total"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="Total: S/.11567.00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </LinearLayout>
 
 
     <android.support.v7.widget.RecyclerView
@@ -44,17 +120,16 @@
         android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="9"
-        android:layout_margin="16dp"
+        android:layout_weight="9.3"
+        android:padding="8dp"
         tools:listitem="@layout/layout_historial_pedido_card" />
 
     <TextView
         android:id="@+id/txt_sin_datos"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="9"
+        android:layout_weight="9.3"
         android:gravity="center"
-        android:text="No cuenta con historial de pedidos"
         android:textStyle="bold"
         android:textColor="@color/colorTextHint"
         android:textSize="24sp"

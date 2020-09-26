@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PedidoApp</string>
+    <string name="app_name">WarSoftAPP</string>
 
     <string name="login">Login</string>
     <string name="hint_usuario">Usuario</string>
@@ -13,4 +13,6 @@
     <string name="dashboard_buscar_cliente">Buscar cliente</string>
     <string name="dashboard_buscar_producto">Buscar producto</string>
     <string name="dashboard_logout">Salir de sesión</string>
+    <string name="registrarNuevoCliente">Registrar nuevo cliente</string>
+    <string name="dashboard_avance_venta">Avance de venta</string>
 </resources>

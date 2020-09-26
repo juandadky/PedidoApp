@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="tipoDocumento">
+        <item>Tipo Documento</item>
+        <item>E</item>
+        <item>D</item>
+        <item>R</item>
+    </string-array>
+
+    <string-array name="formaPago">
+        <item>Seleccione Forma de pago</item>
+        <item>Contado</item>
+        <item>Crédito</item>
+    </string-array>
+
+    <string-array name="visita">
+        <item>Seleccione Visita</item>
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miercoles</item>
+        <item>Jueves</item>
+        <item>Viernes</item>
+        <item>Sabado</item>
+        <item>Domingo</item>
+    </string-array>
+
+    <string-array name="tipoCliente">
+        <item>Seleccione tipo de Cliente</item>
+        <item>Cliente</item>
+        <item>Proveedor</item>
+        <item>Ambos</item>
+    </string-array>
+
+    <string-array name="fuerza">
+        <item>Seleccione fuerza</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    
+</resources>

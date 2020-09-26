@@ -23,16 +23,14 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:text="ID: 18456632"
-                android:textSize="20sp"/>
+                android:textSize="16sp"/>
 
             <TextView
                 android:id="@+id/txt_fecha_pedido"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Fecha: 08/02/20"
-                android:textSize="20sp"/>
+                android:textSize="16sp" />
 
         </LinearLayout>
 
@@ -46,17 +44,37 @@
                 android:layout_width="0dp"
                 android:layout_weight="0.7"
                 android:layout_height="wrap_content"
-                android:text="Cliente: Daniel Rivera"
-                android:textSize="20sp"/>
+                android:textSize="16sp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center">
 
             <TextView
-                android:id="@+id/txt_tipo_pago"
+                android:id="@+id/txt_tipoPago"
                 android:layout_width="0dp"
+                android:layout_weight="0.7"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.3"
-                android:text="Crédito"
-                android:textStyle="bold"
-                android:textSize="20sp"/>
+                android:textSize="16sp"
+                android:scrollHorizontally="true"
+                android:ellipsize="end"/>
+
+            <Button
+                android:id="@+id/btn_ver_mas"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.25"
+                android:text="Ver Mas"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_ver_mas_background"/>
 
         </LinearLayout>
 
